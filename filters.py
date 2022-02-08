@@ -160,4 +160,4 @@ def limit(iterator, n=None):
     :yield: The first (at most) `n` values from the iterator.
     """
 
-    return itertools.islice(iterator, n)
+    return itertools.islice(iterator, n) if n else iterator
